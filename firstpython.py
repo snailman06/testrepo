@@ -1,2 +1,2 @@
 # Display the output
-print("New Python File")
+print("Coding is a pain in the ass to learn")
