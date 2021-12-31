@@ -9,10 +9,12 @@ var p = 0;
 var r = 0;
 var plus = 0;
 var y = 0;
+var i = 0;
+var target = 0;
+
 function compute() {
-    var plus = (p+i);
-    document.getElementById('plus').innerHTML = plus;
-    var p = parseInt(document.getElementById('p').value = p);
+    var plus = (p + i);
+    var p = document.getElementById("p").value;
     var r = document.getElementById('r').value;
     var y = document.getElementById('y').value;
     var target = (new Date().getFullYear() + parseInt(y));
@@ -21,7 +23,7 @@ function compute() {
     /*Simple Interest Formula =
   principal*interest rate*years/100*/
     var i = (p*y*r)/100;
-    document.getElementById('i').innerHTML = i;
+    document.getElementById('i').value = i;
 }
 function uR() {
     /*interest change*/
