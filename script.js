@@ -28,10 +28,5 @@ function uR() {
     var rv = document.getElementById('r').value;
     document.getElementById('rv').innerText = rv;
 }
-function checkSign(num) {
 
-    return num > 0 ? "Postive" : num < 0 ? "Negative" : "zero";
-}
-
-console.log(checkSign(0));
 
