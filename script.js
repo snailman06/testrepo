@@ -5,10 +5,14 @@
  * plus = principal plus interest
  * r = interest input
  * rv = interest after click*/
+var p = 0;
+var r = 0;
+var plus = 0;
+var y = 0;
 function compute() {
     var plus = (p+i);
     document.getElementById('plus').innerHTML = plus;
-    var p = parseInt(document.getElementById('p').value);
+    var p = parseInt(document.getElementById('p').value = p);
     var r = document.getElementById('r').value;
     var y = document.getElementById('y').value;
     var target = (new Date().getFullYear() + parseInt(y));
@@ -24,4 +28,10 @@ function uR() {
     var rv = document.getElementById('r').value;
     document.getElementById('rv').innerText = rv;
 }
+function checkSign(num) {
+
+    return num > 0 ? "Postive" : num < 0 ? "Negative" : "zero";
+}
+
+console.log(checkSign(0));
 
