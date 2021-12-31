@@ -18,10 +18,9 @@ function compute() {
   principal*interest rate*years/100*/
     var i = (p*y*r)/100;
     document.getElementById('i').innerHTML = i;
-
-
 }
-function uR() {/*interest change*/
+function uR() {
+    /*interest change*/
     var rv = document.getElementById('r').value;
     document.getElementById('rv').innerText = rv;
 }
