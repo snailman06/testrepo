@@ -14,7 +14,7 @@ var target = (new Date().getFullYear() + parseInt(years));
     document.getElementById('target').innerHTML = target;
 
     /*Simple Interest Formula =
-  p*r*t/100*/
+  p*rate*years/100*/
 var i = (p*years*rate)/100;
     document.getElementById('i').innerHTML = i;
     
