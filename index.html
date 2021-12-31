@@ -12,11 +12,11 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number" id="p"> <br />
-        Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate(this.value)"> <span id="rate_val">
+        Rate <input type="range" id="r" min="1" max="20" step="0.25" value="10.25" onchange="uR(this.value)"/> <span id="rv">
             10.25%
         </span> <br />
 
-        No. of Years <select id="years">
+        No. of Years <select id="y">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -29,21 +29,21 @@
             <option value="10">10</option>
 
         </select>
-                     <span class="result">
-                         <br />If you Deposit : <span id="p"> </span>
-                         
-                         <br />at an interest rate of : <span id="rate"> </span>
-                     
-                         <br />You will receive an amount of  : <span id="plus"> </span>
-                       
-                         <br />In the year  : <span id="target"> </span><br>
-                         
-                     </span>
+        <span class="result">
+            <br />If you Deposit : <span id="p"> </span>
 
-            <button onclick="compute()">Compute interest</button>
-            <span id="result">
+            <br />at an interest rate of : <span id="r"> </span>
 
-            </span>
+            <br />You will receive an amount of  : <span id="plus"> </span>
+
+            <br />In the year  : <span id="target"> </span><br>
+
+        </span>
+
+        <button onclick="compute()">Compute interest</button>
+        <span id="result">
+
+        </span>
     </div>
 </body>
 
