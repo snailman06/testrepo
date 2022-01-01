@@ -12,18 +12,23 @@ var y = 0;
 var i = 0;
 var target = 0;
 
+
+
 function compute() {
     var plus = (p + i);
-    var p = document.getElementById("p").value;
-    var r = document.getElementById('r').value;
+    var plus = document.getElementById('plus').innerHTML = plus;
+    var p = document.getElementById('principal').innerHTML = p;
+    var r = document.getElementById('rate').innerHTML = r;
     var y = document.getElementById('y').value;
+    
     var target = (new Date().getFullYear() + parseInt(y));
-    document.getElementById('target').innerHTML = target;
+    var target = document.getElementById('target').innerHTML = target;
 
     /*Simple Interest Formula =
   principal*interest rate*years/100*/
     var i = (p*y*r)/100;
-    document.getElementById('i').value = i;
+  
+
 }
 function uR() {
     /*interest change*/
